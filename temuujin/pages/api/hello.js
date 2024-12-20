@@ -1,5 +1,12 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import React from 'react';
+import ImageGrid from './ImageGrid'; // Импортируйте компонент
 
-export default function handler(req, res) {
-  res.status(200).json({ name: "John Doe" });
-}
+const App = () => {
+  return (
+    <div className="App">
+      <ImageGrid /> {/* Вставьте компонент */}
+    </div>
+  );
+};
+
+export default App;
